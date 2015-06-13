@@ -1,6 +1,6 @@
 ## Welcome to My Repo
 
-> I am your Readme.md file, you should probably update me.
+Contacts list, pushing and pulling JSON from a heroku server.
 
 
 ## Usage
