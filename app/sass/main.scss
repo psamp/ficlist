@@ -1,3 +1,64 @@
-@import "/app/sass/bourbon/bourbon";
-@import "/app/sass/neatjs/neat";
+// import neat + bourbon
+@import "bourbon/bourbon";
+@import "neat/neat";
+// end
+
+// variables
+$oh: hidden;
+// end
+
+// mixins
+//
+// end
+
+* {
+  outline:none;
+}
+
+.container {
+  // width:100%;
+  @include outer-container(100%);
+  overflow:hidden;
+}
+
+// sidebar
+.sidebar {
+  @include size(20% 1);
+  // float:left;
+  position:fixed;
+  top:0;
+  bottom:0;
+  background-color:red;
+  clear:both;
+  display:inline-block;
+
+  form {
+    input {
+      width:100%;
+      text-align:center;
+    }
+  }
+}
+// end sidebar
+
+// contact grid
+
+.contactList {
+  float:right;
+  width:80%;
+  margin:0;
+  margin-left:0 auto;
+  margin-right:0 auto;
+  background-color:lightblue;
+
+  li {
+    @include span-columns(4);
+    @include omega(4n);
+    @include size(200px);
+    margin:20px;
+    background-color:blue;
+    }
+}
+
+
 

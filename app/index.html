@@ -8,18 +8,59 @@
 </head>
 <body>
 
+  <!-- start container -->
   <div class="container">
 
+  <div class= "sidebar">
+    <div class="contactCreateForm">
+      <form class="newContact">
+        <input class="name" type="text" placeholder="name">
+        <input class="email" type="text" placeholder="email">
+        <input class="phone" type="text" placeholder="phone">
+        <input class="address" type="text" placeholder="address">
+        <button class="submitContact">add</button>
+      </form>
+    </div>
   </div>
+
+    <ul class="contactList">
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+      <li class="singleContact"></li>
+    </ul>
+
+  </div>
+  <!-- end container -->
 
   <!-- VENDOR -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/handlebars.js"></script>
+  <script src="js/vendor/backbone.js"></script>
   <!-- TEMPLATES -->
   <script src="js/templates.js"></script>
   <!-- MAIN -->
-  <script src="js/main.js"></script>
+
+  <script src="js/models/contact.model.js"></script>
+ <script type="js/collections/contact.collection.js"></script> 
+  <script src="js/main.js/"></script>
 
 </body>
 </html>
