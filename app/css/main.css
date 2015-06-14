@@ -30,6 +30,14 @@ html {
   clear: both;
   display: inline-block;
   border-right: 1px solid RGB(235, 237, 236); }
+  .sidebar .title {
+    font-size: 25px;
+    color: white;
+    width: 100%; }
+    .sidebar .title p {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      text-align: center; }
   .sidebar input {
     width: 100%;
     text-align: center;
