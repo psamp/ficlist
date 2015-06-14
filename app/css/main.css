@@ -24,12 +24,33 @@ html {
   position: fixed;
   top: 0;
   bottom: 0;
-  background-color: red;
+  background-color: RGB(235, 237, 236);
   clear: both;
-  display: inline-block; }
-  .sidebar form input {
+  display: inline-block;
+  border-right: 1px solid RGB(235, 237, 236); }
+  .sidebar input {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    border: 0;
+    border-bottom: 1px RGB(235, 237, 236) solid;
+    height: 25px;
+    font-size: .8em;
+    padding: 1em; }
+  .sidebar form {
+    margin-bottom: 30px; }
+    .sidebar form .firstName, .sidebar form .lastName {
+      width: 50%; }
+    .sidebar form .firstName {
+      border-right: 1px solid RGB(235, 237, 236); }
+    .sidebar form .submitContact {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid white;
+      padding: 10px;
+      color: white;
+      font-size: 12px;
+      font-style: italic;
+      background-color: transparent; }
 
 .contactList {
   float: right;
@@ -37,7 +58,8 @@ html {
   margin: 0;
   margin-left: 0 auto;
   margin-right: 0 auto;
-  background-color: lightblue; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .contactList li {
     float: left;
     display: block;
@@ -45,8 +67,8 @@ html {
     width: 31.76157%;
     height: 200px;
     width: 200px;
-    margin: 20px;
-    background-color: blue; }
+    margin: 10px;
+    border: 1px solid RGB(235, 237, 236); }
     .contactList li:last-child {
       margin-right: 0; }
     .contactList li:nth-child(4n) {

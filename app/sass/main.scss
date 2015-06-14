@@ -5,6 +5,16 @@
 
 // variables
 $oh: hidden;
+
+// color pallate
+
+$pb:RGB(47, 41, 51);
+$dt: RGB(1, 162, 166);
+$lt: RGB(41, 217, 194);
+$lime: RGB(189, 242, 113);
+$pudding: RGB(255, 255, 166);
+$lg:RGB(235, 237, 236);
+
 // end
 
 // mixins
@@ -18,24 +28,50 @@ $oh: hidden;
 .container {
   // width:100%;
   @include outer-container(100%);
-  overflow:hidden;
+  overflow:$oh;
 }
 
 // sidebar
 .sidebar {
   @include size(20% 1);
-  // float:left;
   position:fixed;
   top:0;
   bottom:0;
-  background-color:red;
+  background-color:$lg;
   clear:both;
   display:inline-block;
+  border-right:1px solid $lg;
+
+  input {
+    width:100%;
+    text-align:center;
+    border:0;
+    border-bottom:1px $lg solid;
+    height:25px;
+    font-size:.8em;
+    padding:1em;
+  }
 
   form {
-    input {
+    margin-bottom:30px;
+
+    .firstName, .lastName {
+      width:50%;
+    }
+
+    .firstName {
+      border-right:1px solid $lg;
+    }
+
+    .submitContact {
       width:100%;
-      text-align:center;
+      border:0;
+      border-bottom: 1px solid white;
+      padding:10px;
+      color:white;
+      font-size:12px;
+      font-style:italic;
+      background-color:transparent;
     }
   }
 }
@@ -49,14 +85,15 @@ $oh: hidden;
   margin:0;
   margin-left:0 auto;
   margin-right:0 auto;
-  background-color:lightblue;
+  margin-top:30px;
+  margin-bottom:30px;
 
   li {
     @include span-columns(4);
     @include omega(4n);
     @include size(200px);
-    margin:20px;
-    background-color:blue;
+    margin:10px;
+    border:1px solid $lg;
     }
 }
 
