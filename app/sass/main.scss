@@ -150,6 +150,17 @@ $wh: white;
       font-style: normal;
       padding-bottom:10px;
       border-bottom:1px $wh solid;
+      .fa-remove {
+        color:white;
+        opacity:.5;
+        
+        &:hover {
+          color:red;
+          cursor:pointer;
+          transition: 1s all ease;
+          opacity:1;
+        }
+      }
     }
   }
 

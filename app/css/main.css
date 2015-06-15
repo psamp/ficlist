@@ -91,6 +91,14 @@ html {
       font-style: normal;
       padding-bottom: 10px;
       border-bottom: 1px white solid; }
+      .contactList li h1 .fa-remove {
+        color: white;
+        opacity: .5; }
+        .contactList li h1 .fa-remove:hover {
+          color: red;
+          cursor: pointer;
+          transition: 1s all ease;
+          opacity: 1; }
   .contactList .fa {
     color: white;
     font-style: normal;

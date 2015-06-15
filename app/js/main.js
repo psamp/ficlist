@@ -55,6 +55,9 @@ var appendContactToPage = function(x) {
 // listener for form submission
 $('#newContact').on('submit', newContact);
 
+// $('#deleteContact')on.('click', function () {
+  
+// });
 
 
 
