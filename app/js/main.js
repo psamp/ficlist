@@ -27,7 +27,7 @@ var newContact = function (e) {
 
   // new instance of contact with values equal to our input variables
 
-  var contact = new Contact({
+  var c = new Contact({
     name: contactFullName,
     email: contactEmail,
     phone: contactPhone,
@@ -36,24 +36,24 @@ var newContact = function (e) {
 
 
 
-  myContacts.add(contact).save().success( function (contactData) {
+  myContacts.add(c).save().success( function (contactData) {
     appendContactToPage(contactData);
   });
 
   this.reset();
 };
 
-var appendContactToPage = function(param) { 
-  console.log(param);
+var appendContactToPage = function(x) { 
+  console.log(x);
 
-  var contactHtml = template.contact(param);
+  var contactHtml = template.contact(x);
 
-  $('#contactList').prepend(contactHtml);
+  $('.contactList').prepend(contactHtml);
 
 };
 
 // listener for form submission
-$('#submitContact').on('submit', newContact);
+$('#newContact').on('submit', newContact);
 
 
 
