@@ -10,13 +10,8 @@ $font2: 'Oswald', sans-serif;
 
 // color pallate
 
-$pb:RGB(47, 41, 51);
 $dt: RGB(1, 162, 166);
 $lt: RGB(41, 217, 194);
-$lime: RGB(189, 242, 113);
-$pudding: RGB(255, 255, 166);
-$lg:lightgrey;
-$dg: darkgrey;
 $wh: white;
 
 // end
@@ -49,27 +44,40 @@ $wh: white;
   position:fixed;
   top:0;
   bottom:0;
-  background-color:$lg;
+  background-color:$lt;
   clear:both;
   display:inline-block;
-  border-right:1px solid $wh;
+  border-right:1px solid $lt;
 
   .title {
+    font-size:20px;
+    color:$wh;
+    width:100%;
+
     h1 {
       font-family:$font2;
       text-transform: uppercase;
       text-align:center;
+
+      span {
+        margin-left: 5px;
+      }
+
+      span:nth-child(odd) {
+        color:$dt;
+      }
+
+      span:nth-child(even) {
+        color:$lt;
+      }
     }
-    font-size:20px;
-    color:$wh;
-    width:100%;
   }
 
   input {
     width:100%;
     text-align:center;
     border:0;
-    border-bottom:1px $lg solid;
+    border-bottom:1px $lt solid;
     height:25px;
     font-size:.8em;
     padding:20px;
@@ -83,7 +91,7 @@ $wh: white;
     }
 
     .firstName {
-      border-right:1px solid $lg;
+      border-right:1px solid $lt;
     }
 
     .submitContact {
@@ -125,14 +133,14 @@ $wh: white;
     font-style:italic;
     border:0px;
     border-radius:10px;
-    color:$dg;
+    color:$dt;
     color:$wh;  
     &:nth-child(odd) {
-      background-color:$dg; 
+      background-color:$dt; 
     }
 
     &:nth-child(even) {
-      background-color:$lg; 
+      background-color:$lt; 
     }
 
     h1 {
