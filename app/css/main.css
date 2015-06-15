@@ -8,7 +8,8 @@ html {
 
 * {
   outline: none;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 
 .container {
   overflow: hidden; }
@@ -19,7 +20,7 @@ html {
   position: fixed;
   top: 0;
   bottom: 0;
-  background-color: RGB(235, 237, 236);
+  background-color: lightgrey;
   clear: both;
   display: inline-block;
   border-right: 1px solid white; }
@@ -35,7 +36,7 @@ html {
     width: 100%;
     text-align: center;
     border: 0;
-    border-bottom: 1px RGB(235, 237, 236) solid;
+    border-bottom: 1px lightgrey solid;
     height: 25px;
     font-size: .8em;
     padding: 20px; }
@@ -43,7 +44,7 @@ html {
     width: 50%;
     background-image: none; }
   .sidebar form .firstName {
-    border-right: 1px solid RGB(235, 237, 236); }
+    border-right: 1px solid lightgrey; }
   .sidebar form .submitContact {
     width: 100%;
     border: 0;
@@ -60,9 +61,35 @@ html {
   margin-right: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  list-style: none; }
+  list-style: none;
+  margin-right: 0 auto;
+  margin-right: 0 auto; }
   .contactList li {
-    height: 150px;
     margin: 30px;
-    width: 90%;
-    border: 1px solid RGB(235, 237, 236); }
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    font-style: italic;
+    border: 0px;
+    border-radius: 10px;
+    color: darkgrey;
+    color: white; }
+    .contactList li:nth-child(odd) {
+      background-color: darkgrey; }
+    .contactList li:nth-child(even) {
+      background-color: lightgrey; }
+    .contactList li h1 {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-style: normal;
+      padding-bottom: 10px;
+      border-bottom: 1px white solid; }
+  .contactList .fa {
+    color: white;
+    font-style: normal;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-weight: bold; }

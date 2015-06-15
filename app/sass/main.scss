@@ -15,7 +15,9 @@ $dt: RGB(1, 162, 166);
 $lt: RGB(41, 217, 194);
 $lime: RGB(189, 242, 113);
 $pudding: RGB(255, 255, 166);
-$lg:RGB(235, 237, 236);
+$lg:lightgrey;
+$dg: darkgrey;
+$wh: white;
 
 // end
 
@@ -26,6 +28,7 @@ $lg:RGB(235, 237, 236);
 * {
   outline:none;
   font-family: $font;
+  font-weight:300;
 }
 
 // old container with grid:
@@ -49,7 +52,7 @@ $lg:RGB(235, 237, 236);
   background-color:$lg;
   clear:both;
   display:inline-block;
-  border-right:1px solid white;
+  border-right:1px solid $wh;
 
   .title {
     h1 {
@@ -58,7 +61,7 @@ $lg:RGB(235, 237, 236);
       text-align:center;
     }
     font-size:20px;
-    color:white;
+    color:$wh;
     width:100%;
   }
 
@@ -87,7 +90,7 @@ $lg:RGB(235, 237, 236);
       width:100%;
       border:0;
       padding:10px;
-      color:white;
+      color:$wh;
       font-size:25px;
       background-color:transparent;
     }
@@ -106,18 +109,51 @@ $lg:RGB(235, 237, 236);
   margin-top:30px;
   margin-bottom:30px;
   list-style:none;
+  margin-right:0 auto;
+  margin-right:0 auto;
 
   li {
     // old grid settings
     // @include span-columns(4);
     // @include omega(4n);
     // @include size(200px);
-    height:150px;
+    // height:150px;
     margin:30px;
-    width:90%;
-    // background-color:red;
-    border:1px solid $lg;
+    width:50%;
+    padding:10px;
+    font-size:14px;
+    font-style:italic;
+    border:0px;
+    border-radius:10px;
+    color:$dg;
+    color:$wh;  
+    &:nth-child(odd) {
+      background-color:$dg; 
     }
+
+    &:nth-child(even) {
+      background-color:$lg; 
+    }
+
+    h1 {
+      font-family:$font2;
+      text-transform:uppercase;
+      font-size:15px;
+      font-style: normal;
+      padding-bottom:10px;
+      border-bottom:1px $wh solid;
+    }
+  }
+
+  .fa {
+    color:$wh;
+    font-style: normal;
+    font-size:14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:10px;
+    font-weight:bold;
+  }
 }
 
 
