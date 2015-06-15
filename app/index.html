@@ -17,13 +17,17 @@
   <div class="container">
 
   <div class= "sidebar">
-  <div class="title"><p>ficlist</p></div>
+  <div class="title"><h1>ficlist</h1></div>
     <div class="contactCreateForm">
-      <form class="newContact">
-        <input class="firstName" type="text" placeholder="first"><input class="lastName" type="text" placeholder="last">
-        <input class="email" type="text" placeholder="email@email.com">
-        <input class="phone" type="text" placeholder="123-456-7890">
-        <input class="twitterName" type="text" placeholder="@twitter">
+      <form class="newContact" id="newContact">
+        <input class="firstName" id= "firstName" type="text" placeholder="first"><input class="lastName" id="lastName" type="text" placeholder="last">
+
+        <input id="emailAddress" type="text" placeholder="email@email.com">
+
+        <input id="phoneNumber" type="tel" placeholder="123-456-7890">
+
+        <input id="twitterName" type="text" placeholder="@twitter">
+
         <button class="submitContact"><i class="fa fa-plus-square"></i></button>
       </form>
     </div>
@@ -33,18 +37,6 @@
   </div>
 
     <ul class="contactList">
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
-      <li class="singleContact"></li>
       <li class="singleContact"></li>
     </ul>
 
@@ -59,9 +51,9 @@
   <!-- TEMPLATES -->
   <script src="js/templates.js"></script>
   <!-- MAIN -->
-
   <script src="js/models/contact.model.js"></script>
- <script type="js/collections/contact.collection.js"></script> 
+  <script type="js/collections/contact.collection.js"></script>
+
   <script src="js/main.js/"></script>
 
 </body>

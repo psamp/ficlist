@@ -1,25 +1,23 @@
 var Contact = Backbone.Model.extend ({
 
   initialize: function () {
-    this.logInfo();
+    this.logName();
   },
 
   idAdttribtue: '_id',
 
   defaults: {
-    first:'',
-    last: '',
+    name:'',
     email: '',
     phone: '',
-    twitter: "@" + ''
+    twitter: '@' + ''
   },
 
-  logInfo: function () {
-    console.log(this.get('first'));
-    console.log(this.get('last'));
-    console.log(this.get('email'));
-    console.log(this.get('phone'));
-    console.log(this.get('twitter'));
+  logName: function () {
+    console.log(this.get('name'));
+    // console.log(this.get('email'));
+    // console.log(this.get('phone'));
+    // console.log(this.get('twitter'));
   }
 
 });

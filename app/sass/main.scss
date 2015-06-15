@@ -28,11 +28,16 @@ $lg:RGB(235, 237, 236);
   font-family: $font;
 }
 
+// old container with grid:
+// .container {
+//   @include outer-container(100%);
+//   overflow:$oh;
+// }
+
 .container {
-  // width:100%;
-  @include outer-container(100%);
   overflow:$oh;
 }
+
 
 // sidebar
 .sidebar {
@@ -44,15 +49,15 @@ $lg:RGB(235, 237, 236);
   background-color:$lg;
   clear:both;
   display:inline-block;
-  border-right:1px solid $lg;
+  border-right:1px solid white;
 
   .title {
-    p {
+    h1 {
       font-family:$font2;
       text-transform: uppercase;
       text-align:center;
     }
-    font-size:25px;
+    font-size:20px;
     color:white;
     width:100%;
   }
@@ -68,10 +73,10 @@ $lg:RGB(235, 237, 236);
   }
 
   form {
-    // margin-bottom:15px;
 
     .firstName, .lastName {
       width:50%;
+      background-image:none;
     }
 
     .firstName {
@@ -81,7 +86,6 @@ $lg:RGB(235, 237, 236);
     .submitContact {
       width:100%;
       border:0;
-      // border-bottom: 1px solid white;
       padding:10px;
       color:white;
       font-size:25px;
@@ -91,7 +95,7 @@ $lg:RGB(235, 237, 236);
 }
 // end sidebar
 
-// contact grid
+// contact list
 
 .contactList {
   float:right;
@@ -101,12 +105,17 @@ $lg:RGB(235, 237, 236);
   margin-right:0 auto;
   margin-top:30px;
   margin-bottom:30px;
+  list-style:none;
 
   li {
-    @include span-columns(4);
-    @include omega(4n);
-    @include size(200px);
-    margin:10px;
+    // old grid settings
+    // @include span-columns(4);
+    // @include omega(4n);
+    // @include size(200px);
+    height:150px;
+    margin:30px;
+    width:800px;
+    // background-color:red;
     border:1px solid $lg;
     }
 }

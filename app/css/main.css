@@ -11,14 +11,7 @@ html {
   font-family: "Open Sans", sans-serif; }
 
 .container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   overflow: hidden; }
-  .container::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .sidebar {
   font-weight: 300;
@@ -29,12 +22,12 @@ html {
   background-color: RGB(235, 237, 236);
   clear: both;
   display: inline-block;
-  border-right: 1px solid RGB(235, 237, 236); }
+  border-right: 1px solid white; }
   .sidebar .title {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     width: 100%; }
-    .sidebar .title p {
+    .sidebar .title h1 {
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
       text-align: center; }
@@ -47,7 +40,8 @@ html {
     font-size: .8em;
     padding: 20px; }
   .sidebar form .firstName, .sidebar form .lastName {
-    width: 50%; }
+    width: 50%;
+    background-image: none; }
   .sidebar form .firstName {
     border-right: 1px solid RGB(235, 237, 236); }
   .sidebar form .submitContact {
@@ -65,19 +59,10 @@ html {
   margin-left: 0 auto;
   margin-right: 0 auto;
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  list-style: none; }
   .contactList li {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
+    height: 150px;
+    margin: 30px;
+    width: 800px;
     border: 1px solid RGB(235, 237, 236); }
-    .contactList li:last-child {
-      margin-right: 0; }
-    .contactList li:nth-child(4n) {
-      margin-right: 0; }
-    .contactList li:nth-child(4n+1) {
-      clear: left; }
