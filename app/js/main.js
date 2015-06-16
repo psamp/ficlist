@@ -45,24 +45,31 @@ var appendContactToPage = function(x) {
 
   var contactHtml = template.contact(x);
 
-  $('.contactList').prepend(contactHtml);
+  $('.contactList').append(contactHtml);
 
 };
 
 // listener for form submission
 $('#newContact').on('submit', newContact);
 
-$('#deleteContact').on('click', function(){
+// delete contact
+
+$('#deleteContact').on('click', function(e){
+  console.log("hi");
+
+  e.preventDefault();
+
+  // // var dataId = _.map(myContacts.models, function (x) {
+  // //   return x.attributes._id;
+  // // });
     
-  var htmlId = $(this).parent().attr("id");
-  
-  var dataId = _.map(myContacts.models, function (x) {
-    return x.attributes._id;
-  });
+  // var deleteThisContact = $(this).parent(),
+  //             contactId = deleteThisContact.attr("id");
 
-  console.log(dataId);
+  // $.ajax({
+  //   url: url + '/' + contactId,
+  //   type: 'DELETE'
+  // });
+
 });
-
-
-
 

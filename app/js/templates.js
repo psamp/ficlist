@@ -6,7 +6,7 @@ this["template"]["contact"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.
     + alias3(((helper = (helper = helpers._id || (depth0 != null ? depth0._id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"_id","hash":{},"data":data}) : helper)))
     + "\">\n  \n  <p class=\"contactFullName\">\n  <h1>"
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
-    + " <i class=\"fa fa-remove\" id=\"deleteContact\"></i></h1>\n  </p>\n\n  <p class=\"contactEmail\"> <i class=\"fa fa-envelope-o\"></i> "
+    + " <button id=\"deleteContact\">Delete</button> </h1>\n  </p>\n\n  <p class=\"contactEmail\"> <i class=\"fa fa-envelope-o\"></i> "
     + alias3(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"email","hash":{},"data":data}) : helper)))
     + "</p>\n\n  <p class=\"contactPhone\"> <i class=\"fa fa-phone\"></i> "
     + alias3(((helper = (helper = helpers.phone || (depth0 != null ? depth0.phone : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"phone","hash":{},"data":data}) : helper)))
