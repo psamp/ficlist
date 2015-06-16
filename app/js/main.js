@@ -55,10 +55,9 @@ $('#newContact').on('submit', newContact);
 // delete contact
 
 $('#deleteContact').on('click', function(e){
-  console.log("hi");
 
   e.preventDefault();
-
+  
   // // var dataId = _.map(myContacts.models, function (x) {
   // //   return x.attributes._id;
   // // });
