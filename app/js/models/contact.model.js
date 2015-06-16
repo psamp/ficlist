@@ -1,7 +1,7 @@
 var Contact = Backbone.Model.extend ({
 
   initialize: function () {
-    this.logInfo();
+    // this.logInfo();
   },
 
   idAdttribute: '_id',

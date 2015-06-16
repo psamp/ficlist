@@ -54,10 +54,13 @@ $('#newContact').on('submit', newContact);
 
 $('#deleteContact').on('click', function(){
     
-  var models = myContacts.models;
-
-  var liId = _.filter(models, function (x) {
+  var htmlId = $(this).parent().attr("id");
+  
+  var dataId = _.map(myContacts.models, function (x) {
+    return x.attributes._id;
   });
+
+  console.log(dataId);
 });
 
 
