@@ -1,7 +1,7 @@
 var Contact = Backbone.Model.extend ({
 
   initialize: function () {
-    this.logName();
+    this.logInfo();
   },
 
   idAdttribute: '_id',
@@ -13,11 +13,11 @@ var Contact = Backbone.Model.extend ({
     twitter: '@' + ''
   },
 
-  logName: function () {
+  logInfo: function () {
     console.log(this.get('name'));
-    // console.log(this.get('email'));
-    // console.log(this.get('phone'));
-    // console.log(this.get('twitter'));
+    console.log(this.get('email'));
+    console.log(this.get('phone'));
+    console.log(this.get('twitter'));
   }
 
 });

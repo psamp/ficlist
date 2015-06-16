@@ -34,8 +34,6 @@ var newContact = function (e) {
     twitter: "@" + contactTwitter
   });
 
-
-
   myContacts.add(c).save().success( function (contactData) {
     appendContactToPage(contactData);
   });
@@ -44,7 +42,6 @@ var newContact = function (e) {
 };
 
 var appendContactToPage = function(x) { 
-  console.log(x);
 
   var contactHtml = template.contact(x);
 
@@ -55,9 +52,13 @@ var appendContactToPage = function(x) {
 // listener for form submission
 $('#newContact').on('submit', newContact);
 
-// $('#deleteContact')on.('click', function () {
-  
-// });
+$('#deleteContact').on('click', function(){
+    
+  var models = myContacts.models;
+
+  var liId = _.filter(models, function (x) {
+  });
+});
 
 
 
